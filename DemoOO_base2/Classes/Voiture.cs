@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoOO_base2.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DemoOO.Classes
 {
-    class Voiture
+    class Voiture : Vehicule
     {
         private string _couleur;
         private TypeMoteur _moteur;
@@ -23,24 +24,26 @@ namespace DemoOO.Classes
         }
 
 
-        public Voiture() { }
+        public Voiture(string name, string couleur, TypeMoteur moteur, int nbrPorte,
+            string typeChassis, double prix) : base(name)
+        {
+            this._couleur = couleur;
+            this._moteur = moteur;
+            this._nbrPorte = nbrPorte;
+            this._typeChassis = typeChassis;
+            this._prix = prix;
+            this._kmParcouru = 0;
+        }
 
-        public Voiture(
-            string couleur, 
-            TypeMoteur moteur, 
-            int nbrPorte, 
-            string typeChassis, 
-            double prix
-        )
+        public Voiture(string couleur, TypeMoteur moteur, int nbrPorte, string typeChassis, double prix, int kmParcouru) : base()
         {
             _couleur = couleur;
             _moteur = moteur;
-            _typeChassis = typeChassis;    
-            _prix = prix;
             _nbrPorte = nbrPorte;
+            _typeChassis = typeChassis;
+            _prix = prix;
+            _kmParcouru = kmParcouru;
         }
-
-
 
         public void SeDeplacer()
         {
@@ -75,25 +78,14 @@ namespace DemoOO.Classes
 
         public int Prix3 { get; protected set; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public void RePeindre(string nouvelleCouleur)
         {
             _couleur = nouvelleCouleur;
+        }
+
+        public override void Rouler()
+        {
+            Console.WriteLine("Vroum");
         }
 
     }

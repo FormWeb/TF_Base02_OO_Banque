@@ -21,3 +21,11 @@ C:\Users\Briar\source\repos\TF_Base02_OO_Banque\ExoBanque\obj\Debug\ExoBanque.cs
 C:\Users\Briar\source\repos\TF_Base02_OO_Banque\ExoBanque\obj\Debug\ExoBanque.csproj.CoreCompileInputs.cache
 C:\Users\Briar\source\repos\TF_Base02_OO_Banque\ExoBanque\obj\Debug\ExoBanque.exe
 C:\Users\Briar\source\repos\TF_Base02_OO_Banque\ExoBanque\obj\Debug\ExoBanque.pdb
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\bin\Debug\ExoBanque.exe.config
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\bin\Debug\ExoBanque.exe
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\bin\Debug\ExoBanque.pdb
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\obj\Debug\ExoBanque.csproj.AssemblyReference.cache
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\obj\Debug\ExoBanque.csproj.SuggestedBindingRedirects.cache
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\obj\Debug\ExoBanque.csproj.CoreCompileInputs.cache
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\obj\Debug\ExoBanque.exe
+K:\CoursBStorm\CSharp\Base2\Correction\ExoBanque\obj\Debug\ExoBanque.pdb

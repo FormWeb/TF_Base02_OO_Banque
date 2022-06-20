@@ -8,17 +8,22 @@ namespace ExoBanque
 {
     internal class Epargne : Compte
     {
+        
 
         #region Propriétés
         public DateTime DateDernierRetrait { get; private set; }
         #endregion
 
         #region Constructeurs
-        public Epargne(string numero, Personne titulaire)
+        public Epargne(string numero, Personne titulaire) : base(numero, titulaire)
         {
-            Numero = numero.ToUpper();
-            Titulaire = titulaire;
         }
+
+        public Epargne(string numero, decimal solde, Personne titulaire) : base(numero, solde, titulaire)
+        {
+        }
+
+
         #endregion
 
         #region Méthodes
@@ -29,6 +34,11 @@ namespace ExoBanque
 
             if(oldSolde != Solde)
                 DateDernierRetrait = DateTime.Now;
+        }
+
+        protected override decimal CalculInteret()
+        {
+            return Solde * 0.045M;
         }
         #endregion
     }

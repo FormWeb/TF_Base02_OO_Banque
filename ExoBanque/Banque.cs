@@ -8,9 +8,11 @@ namespace ExoBanque
 {
     class Banque
     {
+        public static readonly string COUNTRY_CODE = "BE";
+
         #region Champs
         // Dico avec en clef "numero de compte" et en valeur "le compte"
-        private Dictionary<string, Courant> _Comptes;
+        public Dictionary<string, Compte> Comptes { get; set; }
         #endregion
 
         #region Props
@@ -23,20 +25,20 @@ namespace ExoBanque
             this.Nom = nom;
 
             // Initialisation du dico des comptes
-            this._Comptes = new Dictionary<string, Courant>();
+            this.Comptes = new Dictionary<string, Compte>();
         }
         #endregion
 
-        public void Ajouter(Courant compte)
+        public void Ajouter(Compte compte)
         {
             string numero = compte.Numero;
 
-            if(_Comptes.ContainsKey(numero))
+            if(Comptes.ContainsKey(numero))
             {
                 // Le compte existe deja :o
                 return; // -> A remplacer par une erreur
             }
-            _Comptes.Add(numero, compte);
+            Comptes.Add(numero, compte);
         }
     }
 }

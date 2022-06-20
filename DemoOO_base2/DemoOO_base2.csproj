@@ -43,7 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Animal.cs" />
+    <Compile Include="Classes\ContientEException.cs" />
+    <Compile Include="Classes\RandomGenerator.cs" />
+    <Compile Include="Classes\Train.cs" />
+    <Compile Include="Classes\Vehicule.cs" />
     <Compile Include="Classes\Voiture.cs" />
+    <Compile Include="Delegate\MakeMathDelegate.cs" />
+    <Compile Include="Interfaces\ISeDeplacer.cs" />
+    <Compile Include="Interfaces\ISeNommer.cs" />
     <Compile Include="Namespace.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

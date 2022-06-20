@@ -10,9 +10,9 @@ namespace ExoBanque
     {
         #region Auto-Props 
         // Les valeurs de "champs" sont généré automatiquement
-        public string Prenom { get; set; }
-        public string Nom { get; set; }
-        public DateTime DateNaiss { get; set; }
+        public string Prenom { get; private set; }
+        public string Nom { get; private set; }
+        public DateTime DateNaiss { get; private set; }
         #endregion
 
         #region Constructeur 
